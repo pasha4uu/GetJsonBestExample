@@ -43,7 +43,7 @@ class DataViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     cell.imageV.layer.borderWidth = 3
     cell.imageV.layer.borderColor = UIColor.darkGray.cgColor
     cell.nameLbl.text = "\(AppManager.shared.feeds!.feed.results[indexPath.row].name)"
-    cell.discriptionLbl.text =  "\(AppManager.shared.feeds!.feed.results[indexPath.row].releaseDate)"
+    cell.discriptionLbl.text =  "Release date : \(AppManager.shared.feeds!.feed.results[indexPath.row].releaseDate)"
   
   return cell
     
@@ -56,6 +56,13 @@ class DataViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     self.navigationController?.pushViewController(DV, animated: true)
   }
   
+  func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+   return tableView.estimatedRowHeight
+  }
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return tableView.estimatedRowHeight
+  }
     /*
     // MARK: - Navigation
 

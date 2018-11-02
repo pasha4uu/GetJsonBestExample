@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-
+  
   @IBOutlet weak var dateLbl: UILabel!
   @IBOutlet weak var nameLbl: UILabel!
   @IBOutlet weak var artistIdLbl: UILabel!
@@ -19,22 +19,23 @@ class DetailsViewController: UIViewController,UITableViewDelegate,UITableViewDat
   @IBOutlet weak var genreTBV: UITableView!
   var indexRow: Int!
   override func viewDidLoad() {
-        super.viewDidLoad()
-        updateFecthData()
+    super.viewDidLoad()
+    updateFecthData()
     genreTBV.delegate = self
     genreTBV.dataSource = self
-        // Do any additional setup after loading the view.
-    }
-    
-
+    // Do any additional setup after loading the view.
+  }
+  
+  
   func updateFecthData() -> Void {
     
-      nameLbl.text = AppManager.shared.feeds?.feed.results[indexRow].name
-      dateLbl.text = AppManager.shared.feeds?.feed.results[indexRow].releaseDate
-      artistIdLbl.text = AppManager.shared.feeds?.feed.results[indexRow].artistId
-      idLbl.text = AppManager.shared.feeds?.feed.results[indexRow].id
-      kindLbl.text = AppManager.shared.feeds?.feed.results[indexRow].kind
+    nameLbl.text = AppManager.shared.feeds?.feed.results[indexRow].name
+    dateLbl.text = AppManager.shared.feeds?.feed.results[indexRow].releaseDate
+    artistIdLbl.text = AppManager.shared.feeds?.feed.results[indexRow].artistId
+    idLbl.text = AppManager.shared.feeds?.feed.results[indexRow].id
+    kindLbl.text = AppManager.shared.feeds?.feed.results[indexRow].kind
     
+
     DispatchQueue.global(qos: .background).async {
       
       let url = URL(string: (AppManager.shared.feeds?.feed.results[self.indexRow].artworkUrl100)!)
@@ -58,14 +59,14 @@ class DetailsViewController: UIViewController,UITableViewDelegate,UITableViewDat
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return "Genres"
   }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  /*
+   // MARK: - Navigation
+   
+   // In a storyboard-based application, you will often want to do a little preparation before navigation
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   // Get the new view controller using segue.destination.
+   // Pass the selected object to the new view controller.
+   }
+   */
+  
 }
