@@ -9,7 +9,7 @@
 import Foundation
 
 struct FeedDetails:Codable {
-  let feed:Feeds
+    let feed:Feeds
 }
 struct Feeds:Codable {
   let author:Author

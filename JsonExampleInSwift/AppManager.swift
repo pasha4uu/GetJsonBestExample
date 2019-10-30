@@ -7,7 +7,10 @@
 //
 
 import Foundation
+
 struct AppManager {
   static var shared = AppManager()
-  var feeds:FeedDetails?
+  var feeds:FeedDetails?    
+    private init (){}
+    
 }

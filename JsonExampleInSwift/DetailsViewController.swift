@@ -23,6 +23,7 @@ class DetailsViewController: UIViewController,UITableViewDelegate,UITableViewDat
     updateFecthData()
     genreTBV.delegate = self
     genreTBV.dataSource = self
+    genreTBV.tableFooterView = UIView()
     // Do any additional setup after loading the view.
   }
   

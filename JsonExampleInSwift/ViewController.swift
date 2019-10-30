@@ -13,6 +13,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var planTypeSegment: UISegmentedControl!
   @IBOutlet weak var countrySegment: UISegmentedControl!
   var url = String()
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     countrySegment.selectedSegmentIndex = 1
