@@ -96,33 +96,32 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rEU-LR-twa">
                                                     <rect key="frame" x="15" y="11" width="60" height="60"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="60" id="Fnc-4h-Unh"/>
-                                                        <constraint firstAttribute="height" constant="60" id="byH-M6-RtS"/>
+                                                        <constraint firstAttribute="height" constant="60" id="5Pa-Pv-spw"/>
+                                                        <constraint firstAttribute="width" constant="60" id="XoP-Pg-2K8"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zls-f3-TNP">
-                                                    <rect key="frame" x="85" y="11" width="186" height="22"/>
+                                                    <rect key="frame" x="95" y="18" width="184" height="22"/>
                                                     <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.3921568627" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-66-UmS">
-                                                    <rect key="frame" x="85" y="49.5" width="186" height="20"/>
+                                                    <rect key="frame" x="95" y="45.5" width="176" height="20"/>
                                                     <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="16"/>
                                                     <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Zls-f3-TNP" firstAttribute="trailing" secondItem="lto-tM-LQt" secondAttribute="trailingMargin" id="6LJ-ra-A38"/>
-                                                <constraint firstItem="Zls-f3-TNP" firstAttribute="leading" secondItem="rEU-LR-twa" secondAttribute="trailing" constant="10" id="7kj-pF-0PJ"/>
-                                                <constraint firstItem="JC2-66-UmS" firstAttribute="trailing" secondItem="lto-tM-LQt" secondAttribute="trailingMargin" id="Bkk-qN-NrU"/>
-                                                <constraint firstItem="JC2-66-UmS" firstAttribute="leading" secondItem="rEU-LR-twa" secondAttribute="trailing" constant="10" id="GfY-Xi-OYO"/>
-                                                <constraint firstItem="rEU-LR-twa" firstAttribute="leading" secondItem="lto-tM-LQt" secondAttribute="leadingMargin" id="U0n-ku-MLr"/>
-                                                <constraint firstItem="rEU-LR-twa" firstAttribute="top" secondItem="lto-tM-LQt" secondAttribute="topMargin" id="bnp-jq-ErN"/>
-                                                <constraint firstItem="rEU-LR-twa" firstAttribute="bottom" secondItem="lto-tM-LQt" secondAttribute="bottomMargin" constant="2" id="ein-cQ-3gp"/>
-                                                <constraint firstItem="Zls-f3-TNP" firstAttribute="top" secondItem="lto-tM-LQt" secondAttribute="topMargin" id="kyh-0x-JlN"/>
-                                                <constraint firstItem="JC2-66-UmS" firstAttribute="top" secondItem="Zls-f3-TNP" secondAttribute="bottom" constant="16.5" id="rQe-7P-56Z"/>
+                                                <constraint firstItem="Zls-f3-TNP" firstAttribute="leading" secondItem="rEU-LR-twa" secondAttribute="trailing" constant="20" id="5DD-Hg-gMK"/>
+                                                <constraint firstAttribute="trailing" secondItem="JC2-66-UmS" secondAttribute="trailing" constant="8" id="CGr-pz-w3Q"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zls-f3-TNP" secondAttribute="trailing" id="KBk-yl-5Ic"/>
+                                                <constraint firstItem="rEU-LR-twa" firstAttribute="leading" secondItem="lto-tM-LQt" secondAttribute="leading" constant="15" id="KKQ-Ev-IXd"/>
+                                                <constraint firstItem="Zls-f3-TNP" firstAttribute="top" secondItem="lto-tM-LQt" secondAttribute="top" constant="18" id="QBF-6P-hRk"/>
+                                                <constraint firstItem="JC2-66-UmS" firstAttribute="leading" secondItem="rEU-LR-twa" secondAttribute="trailing" constant="20" id="QD4-E1-yVV"/>
+                                                <constraint firstItem="rEU-LR-twa" firstAttribute="top" secondItem="lto-tM-LQt" secondAttribute="top" constant="11" id="iM9-v1-fpc"/>
+                                                <constraint firstItem="JC2-66-UmS" firstAttribute="top" secondItem="Zls-f3-TNP" secondAttribute="bottom" constant="5.5" id="lPa-zs-h7j"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

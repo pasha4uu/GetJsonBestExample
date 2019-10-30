@@ -113,7 +113,7 @@ class DataViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return tableView.estimatedRowHeight
+    return 80
   }
     /*
     // MARK: - Navigation
